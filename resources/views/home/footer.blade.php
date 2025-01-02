@@ -2,39 +2,27 @@
 <div id="contact" class="container-fluid bg-dark text-light border-top wow fadeIn">
     <div class="row">
         <div class="col-md-6 px-0">
-            <div id="map" style="width: 100%; height: 100%; min-height: 400px"></div>
+            <main>
+
+                <div id="map" style="width: 100%; height: 100%; min-height: 400px; border: 1px solid #ccc;"></div>
+            </main>
         </div>
         <div class="col-md-6 px-5 has-height-lg middle-items">
             <h3>FIND US</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, laboriosam doloremque odio delectus, sunt magnam laborum impedit molestiae, magni quae ipsum, ullam eos! Alias suscipit impedit et, adipisci illo quam.</p>
+            <p></p>
             <div class="text-muted">
-                <p><span class="ti-location-pin pr-3"></span> 12345 Fake ST NoWhere, AB Country</p>
-                <p><span class="ti-support pr-3"></span> (123) 456-7890</p>
-                <p><span class="ti-email pr-3"></span>info@website.com</p>
+                <p><span class="ti-location-pin pr-3"></span> Buah Batu</p>
+                <p><span class="ti-support pr-3"></span> 08134567890</p>
+                <p><span class="ti-email pr-3"></span>restoran_nusantara@gmail.com</p>
             </div>
         </div>
     </div>
 </div>
 
 <!-- page footer  -->
-<div class="container-fluid bg-dark text-light has-height-md middle-items border-top text-center wow fadeIn">
-    <div class="row">
-        <div class="col-sm-4">
-            <h3>EMAIL US</h3>
-            <P class="text-muted">info@website.com</P>
-        </div>
-        <div class="col-sm-4">
-            <h3>CALL US</h3>
-            <P class="text-muted">(123) 456-7890</P>
-        </div>
-        <div class="col-sm-4">
-            <h3>FIND US</h3>
-            <P class="text-muted">12345 Fake ST NoWhere AB Country</P>
-        </div>
-    </div>
-</div>
+
 <div class="bg-dark text-light text-center border-top wow fadeIn">
-    <p class="mb-0 py-3 text-muted small">&copy; Copyright <script>document.write(new Date().getFullYear())</script> Made with <i class="ti-heart text-danger"></i> By <a href="http://devcrud.com">DevCRUD</a></p>
+    <p class="mb-0 py-3 text-muted small">&copy; Copyright <script>document.write(new Date().getFullYear())</script></a></p>
 </div>
 <!-- end of page footer -->
 
@@ -50,6 +38,28 @@
 
 <!-- google maps -->
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>
+
+<script>
+    function initMap() {
+        // Lokasi awal
+        const location = { lat: -6.9727693221519536,  lng: 107.63501049128323 };
+
+        // Membuat peta
+        const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 10,
+            center: location,
+        });
+
+        // Menambahkan marker
+        new google.maps.Marker({
+            position: location,
+            map: map,
+        });
+    }
+
+    // Panggil fungsi setelah peta dimuat
+    window.onload = initMap;
+    </script>
 
 <!-- FoodHut js -->
 <script src="assets/js/foodhut.js"></script>

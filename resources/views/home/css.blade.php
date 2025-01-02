@@ -1,7 +1,7 @@
 <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Start your development with FoodHut landing page.">
-    <meta name="author" content="Devcrud">
+    <meta name="description" content="Makanan Nusantara">
+    <meta name="test" content="TeST">
     <title>Rest</title>
    
     <!-- font icons -->

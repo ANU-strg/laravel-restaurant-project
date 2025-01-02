@@ -6,22 +6,14 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#home">Home</a>
+                    <a class="nav-link" href="#home">Masakan Nusantara</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#about">Tentang Kami</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#gallary">Gallery</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#book-table">Reservasi</a>
-                </li>
+                
             </ul>
-            <a class="navbar-brand m-auto" href="#">
-                <img src="assets/imgs/logo.svg" class="brand-img" alt="">
-                <span class="brand-txt">Masakan Nusantara</span>
-            </a>
+            
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" href="#blog">Blog<span class="sr-only">(current)</span></a>
