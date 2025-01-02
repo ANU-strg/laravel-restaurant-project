@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 Use App\Models\Food;
 
+Use App\Models\Order;
+
 class AdminController extends Controller
 {
     public function add_food ()
@@ -66,5 +68,11 @@ class AdminController extends Controller
 
         $data->save();
         return redirect('view_food')->with('message', 'Food updated successfully');
+    }
+
+    public function orders ()
+    {
+        $data = Order::all();
+        return view('admin.order', compact('data'));
     }
 }
