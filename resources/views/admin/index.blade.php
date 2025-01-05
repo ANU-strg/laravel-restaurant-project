@@ -22,5 +22,3 @@
     @include('admin.js')
   </body>
 </html>
-
-{{-- amoy kntl --}}

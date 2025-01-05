@@ -12,6 +12,8 @@ use App\Models\Cart;
 
 use App\Models\Order;
 
+use App\Models\Book;
+
 use Illuminate\Support\Facades\Auth;
 
 use Illuminate\Support\Str;
@@ -42,11 +44,12 @@ class HomeController extends Controller
 
             else
             {
-                $counts = [
-                    'foodCount' => Food::count(),
-                    'orderCount' => Order::count()
-                ];
-                return view('admin.index');
+                $total_user = User::where('usertype', '=', 'user')->count();
+                $total_food = Food::count();
+                $total_order = Order::count();
+                $total_delivered = Order::where('delivery_status', '=', 'Delivered')->count();;
+                
+                return view('admin.index', compact('total_user', 'total_food', 'total_order', 'total_delivered'));
             }
         }
     }
@@ -122,6 +125,20 @@ class HomeController extends Controller
 
             $data->delete();
         }
+
+        return redirect()->back();
+    }
+
+    public function book_table (Request $request)
+    {
+        $data = new Book;
+
+        $data->phone = $request->phone;
+        $data->guest = $request->n_guest;
+        $data->time = $request->time;
+        $data->date = $request->date;
+
+        $data->save();
 
         return redirect()->back();
     }

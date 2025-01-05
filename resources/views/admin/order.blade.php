@@ -53,6 +53,7 @@
                     <th>Price</th>
                     <th>Image</th>
                     <th>Status</th>
+                    <th>Change Status</th>
                 </tr>
                 
                 @foreach ($data as $data)  
@@ -66,6 +67,11 @@
                     <td>{{ $data->price }}</td>
                     <td><img width="100" src="food_img/{{ $data->image }}" alt=""></td>
                     <td>{{ $data->delivery_status }}</td>
+                    <td>
+                      <a onclick="return confirm('Apakah anda yakin?')" class="btn btn-info" href="{{ url('on_the_way', $data->id) }}">On the Way</a>
+                      <a onclick="return confirm('Apakah anda yakin?')" class="btn btn-warning" href="{{ url('delivered', $data->id) }}">Delivered</a>
+                      <a onclick="return confirm('Apakah anda yakin?')" class="btn btn-danger" href="{{ url('canceled', $data->id) }}">Canceled</a>
+                    </td>
                 </tr>
                 @endforeach
             </table>

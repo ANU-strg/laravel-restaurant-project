@@ -20,6 +20,9 @@
               <li>
                 <a href="{{ url('orders') }}"> <i class="icon-logout"></i>Orders </a>
               </li>
+              <li>
+                <a href="{{ url('reservations') }}"> <i class="icon-logout"></i>Reservasi </a>
+              </li>
       </ul>
     </nav>
     <!-- Sidebar Navigation end-->
