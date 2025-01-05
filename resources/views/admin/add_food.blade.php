@@ -29,6 +29,12 @@
         <div class="page-header">
           <div class="container-fluid">
 
+            @if (session('message'))
+                <div class="alert alert-success">
+                    {{ session('message') }}
+                </div>
+            @endif
+
             <form action="{{ url('upload_food') }}" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="div_deg">

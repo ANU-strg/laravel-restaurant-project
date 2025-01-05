@@ -42,6 +42,10 @@ class HomeController extends Controller
 
             else
             {
+                $counts = [
+                    'foodCount' => Food::count(),
+                    'orderCount' => Order::count()
+                ];
                 return view('admin.index');
             }
         }
