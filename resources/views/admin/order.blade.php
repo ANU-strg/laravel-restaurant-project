@@ -44,16 +44,16 @@
 
             <table>
                 <tr>
-                    <th>Customer Name</th>
+                    <th>Nama</th>
                     <th>Email</th>
-                    <th>Phone</th>
-                    <th>Address</th>
-                    <th>Food title</th>
-                    <th>Quantity</th>
-                    <th>Price</th>
-                    <th>Image</th>
+                    <th>No.Telpon</th>
+                    <th>Alamat</th>
+                    <th>Menu</th>
+                    <th>Jumlah</th>
+                    <th>Harga</th>
+                    <th>Gambar</th>
                     <th>Status</th>
-                    <th>Change Status</th>
+                    <th>Ubah</th>
                 </tr>
                 
                 @foreach ($data as $data)  
