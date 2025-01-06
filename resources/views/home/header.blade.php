@@ -16,7 +16,7 @@
             
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#blog">Blog<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#blog">Menu<span class="sr-only">(current)</span></a>
                 </li>
 
                 @if (Route::has('login'))
@@ -51,6 +51,5 @@
         <div class="overlay text-white text-center">
             <h1 class="display-2 font-weight-bold my-3">Selamat Datang</h1>
             <h2 class="display-4 mb-5">Di Masakan Nusantara</h2>
-            <a class="btn btn-lg btn-primary" href="#gallary">View Our gallery</a>
         </div>
     </header>

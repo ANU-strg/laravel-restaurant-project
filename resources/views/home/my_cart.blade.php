@@ -65,9 +65,6 @@
                     <a class="nav-link" href="#about">Tentang Kami</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#gallary">Gallery</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link" href="#book-table">Reservasi</a>
                 </li>
             </ul>
@@ -109,10 +106,10 @@
     <div id="gallary" class="text-center bg-dark text-light has-height-md middle-items wow fadeIn">>
         <table>
             <tr>
-                <th>Food Title</th>
-                <th>Price</th>
-                <th>Quantity</th>
-                <th>Image</th>
+                <th>Menu</th>
+                <th>Harga</th>
+                <th>Jumlah</th>
+                <th>Gambar</th>
                 <th>Action</th>
             </tr>
 
@@ -145,7 +142,7 @@
         <form action="{{ url('confirm_order') }}" method="POST">
             @csrf
             <div class="div_deg">
-                <label for="">Name</label>
+                <label for="">Nama</label>
                 <input type="text" name="name" value="{{ Auth::user()->name }}">
             </div>
             <div class="div_deg">
@@ -153,11 +150,11 @@
                 <input type="email" name="email" value="{{ Auth::user()->email }}">
             </div>
             <div class="div_deg">
-                <label for="">Phone</label>
+                <label for="">No.Telpon</label>
                 <input type="number" name="phone" value="{{ Auth::user()->phone }}">
             </div>
             <div class="div_deg">
-                <label for="">Address</label>
+                <label for="">Alamat</label>
                 <input type="text" name="address" value="{{ Auth::user()->address }}">
             </div>
             <div class="div_deg">

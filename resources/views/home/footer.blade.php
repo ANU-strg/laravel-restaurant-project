@@ -8,7 +8,7 @@
             </main>
         </div>
         <div class="col-md-6 px-5 has-height-lg middle-items">
-            <h3>FIND US</h3>
+            <h3>Kontak Kami</h3>
             <p></p>
             <div class="text-muted">
                 <p><span class="ti-location-pin pr-3"></span> Buah Batu</p>

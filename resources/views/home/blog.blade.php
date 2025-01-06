@@ -1,5 +1,5 @@
 <div id="blog" class="container-fluid bg-dark text-light py-5 text-center wow fadeIn">
-    <h2 class="section-title py-5">Our Foods</h2>
+    <h2 class="section-title py-5">Menu</h2>
     
     <div class="tab-content" id="pills-tabContent">
         <div class="tab-pane fade show active" id="foods" role="tabpanel" aria-labelledby="pills-home-tab">

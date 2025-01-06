@@ -9,7 +9,7 @@
                     <input type="text" id="booktable" class="form-control form-control-lg custom-form-control" name="phone" placeholder="No.Telpon">
                 </div>
                 <div class="col-sm-6 col-md-3 col-xs-12 my-2">
-                    <input type="number" id="booktable" class="form-control form-control-lg custom-form-control" name="n_guest" placeholder="NUMBER OF GUESTS" max="20" min="0">
+                    <input type="number" id="booktable" class="form-control form-control-lg custom-form-control" name="n_guest" placeholder="Jumlah Orang" max="20" min="0">
                 </div>
                 <div class="col-sm-6 col-md-3 col-xs-12 my-2">
                     <input type="time" id="booktable" class="form-control form-control-lg custom-form-control" name="time" placeholder="Time">
